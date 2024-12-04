@@ -12,14 +12,14 @@ body {
 }
 
 header {
-  background-color: #1b1b32;
-  height: 50px;
-  width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
+  background-color: #1b1b32;
+  height: 50px;
+  width: 100%;
 }
 
 #logo {
@@ -42,20 +42,20 @@ nav {
 }
 
 nav > ul {
-  height: 100%;
-  margin-block: 0;
-  padding-inline-start: 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 100%;
+  margin-block: 0;
+  padding-inline-start: 0;
 }
 
 nav > ul > li {
+  display: block;
   color: #dfdfe2;
   margin: 0 0.2rem;
   padding: 0.2rem;
-  display: block;
 }
 
 nav > ul > li:hover {
@@ -120,11 +120,11 @@ input {
 }
 
 .question-block {
+  display: block;
   margin-top: 20px;
   padding-top: 5px;
   text-align: left;
   width: 100%;
-  display: block;
 }
 
 p {
@@ -152,19 +152,19 @@ textarea {
 }
 
 button {
+  display: block;
   background: #d0d0d5;
   border: 3px solid #3b3b4f;
   font-size: 23px;
   margin: 40px auto;
   padding: 15px;
   width: 40%;
-  display: block;
 }
 
 footer {
-  background-color: #2a2a40;
   display: flex;
   justify-content: center;
+  background-color: #2a2a40;
 }
 
 footer,
@@ -178,6 +178,7 @@ address {
 }
 
 .sr-only {
+  position: absolute;
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -186,5 +187,4 @@ address {
   padding: 0;
   white-space: nowrap;
   width: 1px;
-  position: absolute;
 }
